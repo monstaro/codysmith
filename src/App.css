@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  src: local("HelveticaNeue"),
+    url(./fonts/HelveticaNeue.ttf) format("truetype");
+}
+
 .App {
   text-align: center;
 }
@@ -20,12 +26,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.name {
+  font-family: "HelveticaNeue";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 92px;
+  letter-spacing: -0.06em;
+  transform: scale(1, 0.69);
+  -webkit-transform: scale(1, 0.69); /* Safari and Chrome */
+  -moz-transform: scale(1, 0.69); /* Firefox */
+  -ms-transform: scale(1, 0.69); /* IE 9 */
+  -o-transform: scale(1, 0.69); /* Opera */
+  margin: 30px 0;
+}
+
+.small {
+  font-size: 32px;
+  margin: 10px;
 }
 
 @keyframes App-logo-spin {
